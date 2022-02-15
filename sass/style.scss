@@ -1,6 +1,6 @@
 /* Global */
 
-$color-main: #d1ccc0;
+$color-main: #f7f1e3;
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -95,7 +95,25 @@ body {
     bottom: 80px;
     left: 50%;
     width: 160px;
-    height: 4px;
+    height: 2px;
     transform: translate(-50%);
+    background-color: red;
+}
+
+/* Intro */
+
+.intro {
     background-color: $color-main;
+}
+
+.intro p {
+    font-style: oblique;
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px 0;
+    font-size: 24px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
