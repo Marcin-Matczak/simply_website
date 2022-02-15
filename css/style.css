@@ -22,4 +22,100 @@ body {
   padding: 108px 0 108px 0;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxXQUFBO0FBSUE7RUFDSSxzQkFBQTtBQ0ZKOztBREtBO0VBQ0ksU0FBQTtFQUNBLGtCQUFBO0VBQ0EseUJBQUE7RUFDQSxjQUFBO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0FDRko7O0FES0E7RUFDSSxpQkFBQTtFQUNBLGNBQUE7RUFDQSxlQUFBO0FDRko7O0FES0E7RUFDSSx3QkFBQTtBQ0ZKIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
+/* Splash */
+.splash {
+  height: 100vh;
+  position: relative;
+  background-image: url(/images/sailing-ship-vessel-boat-sea-37859.jpeg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #d1ccc0;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 4px 10px black;
+}
+
+.splash-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes spinning {
+  0% {
+    transform: rotateY(0deg);
+  }
+  20% {
+    transform: rotateY(72deg);
+  }
+  40% {
+    transform: rotateY(144deg);
+  }
+  60% {
+    transform: rotateY(216deg);
+  }
+  80% {
+    transform: rotateY(288deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes spinning {
+  0% {
+    transform: rotateY(0deg);
+  }
+  20% {
+    transform: rotateY(72deg);
+  }
+  40% {
+    transform: rotateY(144deg);
+  }
+  60% {
+    transform: rotateY(216deg);
+  }
+  80% {
+    transform: rotateY(288deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.splash i {
+  font-size: 40px;
+  background: #d1ccc0;
+  width: 60px;
+  height: 60px;
+  color: black;
+  line-height: 55px;
+  border-radius: 50%;
+  border: 2px solid black;
+  text-shadow: none;
+  -webkit-animation: spinning 0.5s;
+          animation: spinning 0.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.page-title {
+  color: #d1ccc0;
+  font-size: 60px;
+  margin: 48px 0 0 0;
+  font-family: serif;
+}
+
+.page-title::after {
+  position: absolute;
+  content: "";
+  bottom: 80px;
+  left: 50%;
+  width: 160px;
+  height: 4px;
+  transform: translate(-50%);
+  background-color: #d1ccc0;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxXQUFBO0FBSUE7RUFDSSxzQkFBQTtBQ0ZKOztBREtBO0VBQ0ksU0FBQTtFQUNBLGtCQUFBO0VBQ0EseUJBQUE7RUFDQSxjQUFBO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0FDRko7O0FES0E7RUFDSSxpQkFBQTtFQUNBLGNBQUE7RUFDQSxlQUFBO0FDRko7O0FES0E7RUFDSSx3QkFBQTtBQ0ZKOztBREtBLFdBQUE7QUFFQTtFQUNJLGFBQUE7RUFDQSxrQkFBQTtFQUNBLHNFQUFBO0VBQ0Esa0NBQUE7RUFDQSxzQkFBQTtFQUNBLDRCQUFBO0VBQ0EsY0FsQ1M7RUFtQ1QscUJBQUE7RUFDQSwrQkFBQTtBQ0hKOztBRE1BO0VBQ0ksa0JBQUE7RUFDQSxXQUFBO0VBQ0EsUUFBQTtFQUNBLFNBQUE7RUFDQSxnQ0FBQTtBQ0hKOztBRE1BO0VBQ0k7SUFDSSx3QkFBQTtFQ0hOO0VES0U7SUFDSSx5QkFBQTtFQ0hOO0VES0U7SUFDSSwwQkFBQTtFQ0hOO0VES0U7SUFDSSwwQkFBQTtFQ0hOO0VES0U7SUFDSSwwQkFBQTtFQ0hOO0VES0U7SUFDSSwwQkFBQTtFQ0hOO0FBQ0Y7O0FEZkE7RUFDSTtJQUNJLHdCQUFBO0VDSE47RURLRTtJQUNJLHlCQUFBO0VDSE47RURLRTtJQUNJLDBCQUFBO0VDSE47RURLRTtJQUNJLDBCQUFBO0VDSE47RURLRTtJQUNJLDBCQUFBO0VDSE47RURLRTtJQUNJLDBCQUFBO0VDSE47QUFDRjtBRE1BO0VBQ0ksZUFBQTtFQUNBLG1CQXRFUztFQXVFVCxXQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0VBQ0EsdUJBQUE7RUFDQSxpQkFBQTtFQUNBLGdDQUFBO1VBQUEsd0JBQUE7RUFDQSwyQkFBQTtVQUFBLG1CQUFBO0FDSko7O0FET0E7RUFDSSxjQW5GUztFQW9GVCxlQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQkFBQTtBQ0pKOztBRE9BO0VBQ0ksa0JBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLFNBQUE7RUFDQSxZQUFBO0VBQ0EsV0FBQTtFQUNBLDBCQUFBO0VBQ0EseUJBakdTO0FDNkZiIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */

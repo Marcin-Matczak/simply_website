@@ -24,3 +24,78 @@ body {
 .section {
     padding: 108px 0 108px 0;
 }
+
+/* Splash */
+
+.splash {
+    height: 100vh;
+    position: relative;
+    background-image: url(/images/sailing-ship-vessel-boat-sea-37859.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: $color-main;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 4px 10px black;
+}
+
+.splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@keyframes spinning {
+    0% {
+        transform: rotateY(0deg);
+    }
+    20% {
+        transform: rotateY(72deg);
+    }
+    40% {
+        transform: rotateY(144deg);
+    }
+    60% {
+        transform: rotateY(216deg);
+    }
+    80% {
+        transform: rotateY(288deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.splash i {
+    font-size: 40px;
+    background: $color-main;
+    width: 60px;
+    height: 60px;
+    color: black;
+    line-height: 55px;
+    border-radius: 50%;
+    border: 2px solid black;
+    text-shadow: none;
+    animation: spinning 0.5s;
+    animation-delay: 1s;
+}
+
+.page-title {
+    color: $color-main;
+    font-size: 60px;
+    margin: 48px 0 0 0;
+    font-family: serif;
+}
+
+.page-title::after { 
+    position: absolute;
+    content: '';
+    bottom: 80px;
+    left: 50%;
+    width: 160px;
+    height: 4px;
+    transform: translate(-50%);
+    background-color: $color-main;
+}
