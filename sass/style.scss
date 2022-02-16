@@ -286,6 +286,8 @@ body {
     transform: scale(1.5); 
 }
 
+/* Form */
+
 .sign {
     padding: 30px;
 }
@@ -322,4 +324,22 @@ body {
 
 ::placeholder {
     color: $color-main;
+}
+
+/* Footer */
+
+footer {
+    background-color: $color-second;
+}
+
+footer i {
+    font-size: 40px;
+    padding: 25px;
+    color: $color-main;
+    margin: 0 15px 0 15px;
+    transition: all 1s;
+}
+
+footer i:hover {
+    transform: scale(1.5);
 }
