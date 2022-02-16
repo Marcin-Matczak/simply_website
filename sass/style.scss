@@ -256,7 +256,7 @@ body {
     object-fit: cover;
     z-index: 1;
     filter: sepia(60%);
-    padding: 5px;
+    
 }
 
 .see_more {
@@ -284,4 +284,42 @@ body {
 
 .see_more button:hover {
     transform: scale(1.5); 
+}
+
+.sign {
+    padding: 30px;
+}
+
+.sign input {
+    display: block;
+    margin: 15px auto;
+    padding: 15px;
+    min-width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: $color-second;
+    color: $color-main;
+
+}
+
+.sign textarea {
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    min-width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: $color-second;
+    color: $color-main;
+}
+
+.sign button {
+    display: block;
+    margin: 15px auto;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: red;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+::placeholder {
+    color: $color-main;
 }
